@@ -12,12 +12,11 @@
 }
 
 body {
-    overflow-y: hidden;
-    min-height: 100vh;
     background-color: var(--navy-950);
 }
 
 main {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,8 +119,126 @@ img {
   background: rgba(128, 0, 128, 0.5); /* purple with 50% opacity */
 }
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1134px) {
 
-main 
+   main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    width: 100%;
+    object-fit: contain;
+   }
 
+   .stats-container {
+    width: 66%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+   }
+
+   .image-container {
+    width: 66%;
+   }
+
+   img {
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+   }
+
+   .stats-standing-container {
+    margin-left: -2rem;
+   }
+
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    h1 {
+        padding: 0.5rem;
+        text-align: center;;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    .stats-text {
+        text-align: center;
+        margin-left: 3.6rem;
+    }
+
+    .stats-standing-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .companies-container {
+        align-items: center;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .templates-container {
+        align-items: center;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .queries-container {
+        align-items: center;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 479px ) {
+    .companies-container {
+        margin-top: 0;
+        font-size: 0.75rem;
+    }
+
+    .templates-container {
+        margin-top: 0;
+        font-size: 0.75rem;
+    }
+
+    .queries-container {
+        margin-top: 0;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    main {
+        min-height: 100vh;
+    }
+    h1 {
+        width: 83%;
+        margin-left: 1.5rem;
+    }
+
+    .stats-text {
+        width: 83%;
+        margin-left: 1.5rem;
+        padding: 
+    }
+
+    .stats-standing-container {
+        margin-top: 1.5rem;
+    }
 }
